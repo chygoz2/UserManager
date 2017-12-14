@@ -1,0 +1,20 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  usermanager-node: #name of the express app service
+    build: "." # specify the directory of the Dockerfile for express app
+    ports:
+      - "3000:3000" #specify ports forewarding
+    links:
+      - database # link this service to the mongodb service
+
+  database: # name of the mongodb service
+    build: mongodb_database # specify image to build container from
+    ports:
+      - "27018:27017" # specify port forewarding
+    env_file: mongodb_database/.env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
