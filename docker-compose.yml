@@ -13,8 +13,3 @@ services:
     build: mongodb_database # specify image to build container from
     ports:
       - "27018:27017" # specify port forewarding
-    env_file: mongodb_database/.env
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
