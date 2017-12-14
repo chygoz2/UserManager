@@ -1,5 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# To launch app, type
+    `docker-compose up --build`
+
 # User Manager
 
 This repository contains a simple demo API built with NodeJS.
