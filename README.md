@@ -3,10 +3,6 @@
 # To launch app, type
     `docker-compose up --build`
 
-Development was done on windows 10 home which unfortunately cannot run docker for windows directly.
-Hence I had to make use of Docker Toolbox which uses Virtualbox for virtualization. 
-As a result, the IP address used to view the app is something different from 127.0.0.1
-
 # User Manager
 
 This repository contains a simple demo API built with NodeJS.

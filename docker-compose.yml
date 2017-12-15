@@ -5,11 +5,12 @@ services:
   usermanager-node: #name of the express app service
     build: "." # specify the directory of the Dockerfile for express app
     ports:
-      - "3000:3000" #specify ports forewarding
+      - "3000:3000" #specify ports forwarding
     links:
       - database # link this service to the mongodb service
 
   database: # name of the mongodb service
-    build: mongodb_database # specify image to build container from
+    image: mongo # specify image to build container from. This image is available on dockerhub
     ports:
-      - "27018:27017" # specify port forewarding
+      - "27018:27017" # specify port forwarding
+      
