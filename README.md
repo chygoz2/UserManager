@@ -1,7 +1,23 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+This app requires that Docker be installed on your machine.
+You can download Docker from https://www.docker.com/get-docker
+
+Note that if your machine is running on Windows 10 home and previous versions of windows, you will need to use docker toolbox instead.
+Docker toolbox can be downloaded from https://docs.docker.com/toolbox/toolbox_install_windows/
+
+Once docker has been successfully installed, you can run the app by cloning this repository.
+After the files have been downloaded, navigate to the application's root directory and then launch the app by typing the following command in the terminal program 
+on your machine.
+
 # To launch app, type
     `docker-compose up --build`
+
+Note that if you have not previously used Docker Node image and Mongo image available from Dockerhub, it could take a while for the app to start running for the first time.
+This is dependent on the speed of your internet connection.
+
+
+
 
 # User Manager
 
